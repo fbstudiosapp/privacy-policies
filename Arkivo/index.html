@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for Arkivo, an offline file vault published by FB COMPANY.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#12626F">
+<title>Privacy Policy | Arkivo | FB COMPANY</title>
+<style>
+  /* ---------------------------------------------------------------
+     All styling is inlined so this file can be uploaded on its own,
+     with no build step and no external CSS or font dependency. The
+     app does not use this stylesheet: it parses the markup and
+     renders it with native widgets, so the in-app copy follows the
+     device's own theme and text size.
+     --------------------------------------------------------------- */
+  :root {
+    --accent: #12626F;
+    --accent-dark: #0B3C49;
+    --accent-soft: #e6f1f2;
+    --ink: #16181d;
+    --ink-soft: #4a4f5a;
+    --ink-faint: #6b7280;
+    --bg: #f6f8f8;
+    --surface: #ffffff;
+    --line: #dde5e6;
+    --callout-bg: #fff8e6;
+    --callout-line: #F2A03D;
+    --radius: 14px;
+    --maxw: 820px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px 72px; }
+
+  header.masthead {
+    background: linear-gradient(135deg, #1E8A94 0%, var(--accent-dark) 100%);
+    color: #fff;
+    padding: 44px 20px 40px;
+  }
+  header.masthead .inner { max-width: var(--maxw); margin: 0 auto; }
+  .eyebrow {
+    display: inline-block;
+    font-size: .74rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: rgba(255,255,255,.16);
+    border: 1px solid rgba(255,255,255,.28);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  header.masthead h1 {
+    margin: 0 0 20px;
+    font-size: clamp(1.75rem, 5.4vw, 2.6rem);
+    line-height: 1.18;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .identity { margin: 0; padding: 0; list-style: none; }
+  .identity li {
+    font-size: 1rem;
+    margin: 0 0 6px;
+    color: rgba(255,255,255,.95);
+    word-break: break-word;
+  }
+  .identity a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+  .meta {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 14px 20px;
+    font-size: .9rem;
+    color: var(--ink-faint);
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 0 0 18px;
+  }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); margin: 0; }
+
+  nav.toc h2 {
+    font-size: .78rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 12px;
+  }
+  nav.toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a { color: var(--accent-dark); text-decoration: none; font-size: .95rem; }
+  nav.toc a:hover, nav.toc a:focus { text-decoration: underline; }
+
+  section { scroll-margin-top: 20px; }
+  section h2 {
+    font-size: clamp(1.15rem, 3.4vw, 1.4rem);
+    line-height: 1.32;
+    font-weight: 750;
+    color: var(--ink);
+    margin: 38px 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-soft);
+  }
+  section h2 .num {
+    display: inline-block;
+    min-width: 1.7em;
+    color: var(--accent);
+    font-weight: 800;
+  }
+  p { margin: 0 0 14px; }
+  ul.bullets { margin: 0 0 16px; padding-left: 22px; }
+  ul.bullets li { margin-bottom: 8px; }
+
+  .callout {
+    background: var(--callout-bg);
+    border: 1px solid #f0d9a0;
+    border-left: 5px solid var(--callout-line);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 0 0 16px;
+    font-weight: 500;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  dl.kv { margin: 0; }
+  dl.kv dt { font-weight: 700; margin-top: 12px; }
+  dl.kv dd { margin: 2px 0 0; padding: 0; color: var(--ink-soft); }
+
+  a { color: var(--accent-dark); }
+  a:hover, a:focus { color: var(--accent); }
+
+  code {
+    background: #eaf0f1;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: .88em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    word-break: break-all;
+  }
+
+  .contact {
+    background: var(--accent-soft);
+    border: 1px solid #cfe0e2;
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin-top: 30px;
+  }
+  .contact h2 { border: 0; margin-top: 0; padding: 0; }
+  .mail {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    word-break: break-all;
+  }
+
+  footer.site {
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    padding: 26px 20px 40px;
+    text-align: center;
+    color: var(--ink-faint);
+    font-size: .9rem;
+  }
+  footer.site .inner { max-width: var(--maxw); margin: 0 auto; }
+  footer.site strong { color: var(--ink); }
+
+  @media (max-width: 620px) {
+    body { font-size: 16px; }
+    header.masthead { padding: 32px 18px 30px; }
+    .wrap { padding: 0 16px 56px; }
+    .card, .contact { padding: 18px 16px; border-radius: 12px; }
+    nav.toc ol { columns: 1; }
+    section h2 { margin-top: 30px; }
+  }
+
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    header.masthead { background: #fff; color: #000; border-bottom: 2px solid #000; }
+    .identity li, .eyebrow { color: #000; }
+    nav.toc { display: none; }
+    .card, .contact { border: 0; padding: 0; }
+  }
+
+  a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="inner">
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>Arkivo</h1>
+    <ul class="identity">
+      <li><strong>Developer:</strong> FB COMPANY</li>
+      <li><strong>Application:</strong> Arkivo &ndash; private, offline file vault</li>
+      <li><strong>Support:</strong> <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="meta">Last updated: 10 August 2026 &nbsp;&middot;&nbsp; Effective date: 10 August 2026</div>
+
+<main class="wrap">
+
+  <div class="card">
+    <p class="lede">
+      This Privacy Policy explains how Arkivo handles information. Arkivo is a
+      file vault that runs entirely on your device. Please read this policy
+      together with the Terms of Use.
+    </p>
+  </div>
+
+  <nav class="toc card" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#developer">Developer and Application Information</a></li>
+      <li><a href="#collect">Information We Collect</a></li>
+      <li><a href="#do-not-collect">Information We Do Not Collect</a></li>
+      <li><a href="#your-files">Your Files</a></li>
+      <li><a href="#local">On-Device Processing</a></li>
+      <li><a href="#permissions">Permissions</a></li>
+      <li><a href="#network">Network Access</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#security">Data Security</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#international">International Users</a></li>
+      <li><a href="#changes">Changes to This Privacy Policy</a></li>
+      <li><a href="#contact">Contact Information</a></li>
+    </ol>
+  </nav>
+
+  <section id="introduction">
+    <h2><span class="num">1.</span> Introduction</h2>
+    <p>
+      Arkivo ("the application", "the app") is developed and published by
+      FB COMPANY ("we", "us", "the developer"). We respect your privacy and have
+      built the application so that it needs as little information as possible in
+      order to work.
+    </p>
+    <p>
+      By installing or using the application you accept the practices described in
+      this policy. If you do not agree with this policy, please do not use the
+      application.
+    </p>
+  </section>
+
+  <section id="developer">
+    <h2><span class="num">2.</span> Developer and Application Information</h2>
+    <dl class="kv">
+      <dt>Developer</dt><dd>FB COMPANY</dd>
+      <dt>Application</dt><dd>Arkivo &ndash; private, offline file vault</dd>
+      <dt>Package name</dt><dd><code>com.fbcompany.arkivo</code></dd>
+      <dt>Platforms</dt><dd>Android and iOS</dd>
+      <dt>Support email</dt><dd><a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a></dd>
+    </dl>
+  </section>
+
+  <section id="collect">
+    <h2><span class="num">3.</span> Information We Collect</h2>
+    <div class="callout">
+      <p>
+        We do not collect, receive, store or transmit any personal information
+        from the application. There is no account system, no registration, no
+        login, no analytics service and no crash reporting service.
+      </p>
+    </div>
+    <p>
+      The application stores only what it needs in order to work, and it stores it
+      locally on your own device:
+    </p>
+    <ul class="bullets">
+      <li>The files and documents you choose to keep in the vault.</li>
+      <li>The names, folders and any labels you give to those items.</li>
+      <li>Your interface preferences, such as sort order and theme.</li>
+    </ul>
+    <p>
+      This information stays in the application's private storage area on your
+      device. It is not transmitted to us. Uninstalling the application removes
+      it. Note that if you have enabled device backup, your operating system may
+      include application data in your own backup; that backup is controlled by
+      you and by your platform provider, not by us.
+    </p>
+  </section>
+
+  <section id="do-not-collect">
+    <h2><span class="num">4.</span> Information We Do Not Collect</h2>
+    <p>We do not collect any of the following:</p>
+    <ul class="bullets">
+      <li>The contents, names or metadata of the files you keep in the vault.</li>
+      <li>Your name, email address, phone number or postal address.</li>
+      <li>Your contacts, calendar or messages.</li>
+      <li>Your location.</li>
+      <li>Your device identifiers or advertising identifier.</li>
+      <li>Any account credentials, because the application has no accounts.</li>
+      <li>Usage statistics, event logs or diagnostic reports.</li>
+    </ul>
+  </section>
+
+  <section id="your-files">
+    <h2><span class="num">5.</span> Your Files</h2>
+    <p>
+      Files you add to Arkivo are handled only on your device. They are not
+      uploaded, mirrored, indexed remotely, scanned by us, or shared with any
+      third party.
+    </p>
+    <div class="callout">
+      <p>
+        You are responsible for keeping your own backups. The application does not
+        synchronise your vault to any server and cannot recover its contents for
+        you. If you delete an item, uninstall the application, or lose or reset
+        the device, the data held in the vault is gone and neither you nor we can
+        restore it.
+      </p>
+    </div>
+  </section>
+
+  <section id="local">
+    <h2><span class="num">6.</span> On-Device Processing</h2>
+    <p>
+      Everything the application does &ndash; adding items, organising them,
+      searching, renaming and deleting &ndash; happens on your device. No part of
+      it contacts a server.
+    </p>
+    <p>
+      The application works with no network connection at all.
+    </p>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="num">7.</span> Permissions</h2>
+    <p>
+      The application requests no runtime permissions. It does not ask for access
+      to your contacts, your location, your camera, your microphone or your photo
+      library.
+    </p>
+    <p>
+      When you add a file, the application uses your operating system's own file
+      picker. You choose each item explicitly, and the application receives only
+      what you selected. It does not browse your storage on its own and it does
+      not request broad file-system access.
+    </p>
+  </section>
+
+  <section id="network">
+    <h2><span class="num">8.</span> Network Access</h2>
+    <p>
+      The application does not make network requests. There is no advertising, no
+      telemetry, no remote configuration and no update check of our own.
+    </p>
+    <p>
+      Distribution and updates are handled by the app store you installed from,
+      according to that store's own terms and privacy policy.
+    </p>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="num">9.</span> Third-Party Services</h2>
+    <p>
+      The application contains no third-party advertising network, no analytics
+      service, no attribution service, no social login and no crash-reporting
+      service.
+    </p>
+    <p>
+      The only third parties involved are the app stores that distribute the
+      application, and the operating system on your device. Their handling of your
+      information is governed by their own policies.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">10.</span> Children's Privacy</h2>
+    <p>
+      The application is a general-purpose utility. It is not directed to children
+      and it is not designed for or targeted at children.
+    </p>
+    <p>
+      We do not knowingly collect personal information from children. Because we do
+      not collect personal information from anyone, we hold no children's data. If
+      you believe a child has provided personal information to us in some way,
+      please contact us at
+      <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a>
+      so that we can address it.
+    </p>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">11.</span> Data Security</h2>
+    <p>
+      Because we do not operate a server and do not collect your data, there is no
+      developer-side database that could be breached and expose your information.
+    </p>
+    <p>
+      The vault is stored in the private application storage area that your
+      operating system provides, which is protected from other applications by the
+      operating system's sandbox on a device that has not been modified, rooted or
+      jailbroken.
+    </p>
+    <p>
+      No method of electronic storage is completely secure. The security of your
+      device, including its lock screen, its operating system updates and any other
+      software you install, is outside our control.
+    </p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">12.</span> Data Retention</h2>
+    <ul class="bullets">
+      <li><strong>Vault contents and preferences:</strong> kept on your device until you delete them or uninstall the application.</li>
+      <li><strong>Data held by us:</strong> none, because we do not collect any.</li>
+    </ul>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">13.</span> Your Rights</h2>
+    <p>
+      Data protection laws such as the GDPR and the CCPA give you rights over
+      personal information that a company holds about you. Because we hold no
+      personal information about you, there is nothing for us to export, correct or
+      delete on request.
+    </p>
+    <p>You can exercise practical control as follows:</p>
+    <ul class="bullets">
+      <li>Delete individual items from within the application.</li>
+      <li>Remove everything the application has stored by clearing its data in your device settings, or by uninstalling it.</li>
+      <li>Ask a question about this policy by writing to <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a>.</li>
+    </ul>
+  </section>
+
+  <section id="international">
+    <h2><span class="num">14.</span> International Users</h2>
+    <p>
+      The application works the same way everywhere: all processing is local to
+      your device.
+    </p>
+    <p>
+      Because we do not collect your information, we do not transfer your
+      information across borders.
+    </p>
+    <p>
+      It is your responsibility to ensure that your use of the application complies
+      with the laws that apply to you.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">15.</span> Changes to This Privacy Policy</h2>
+    <p>
+      We may update this policy, for example when a feature changes or a legal
+      requirement changes. When we do, we will update the date shown at the top of
+      this document and publish the revised policy at the policy address listed for
+      the application in the app store. Where a change is significant, we will also
+      make the updated policy available in a new version of the application.
+    </p>
+    <p>
+      Continuing to use the application after an update takes effect means you
+      accept the revised policy. We recommend reviewing this policy from time to
+      time.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>16. Contact Information</h2>
+    <p>
+      If you have a question, a concern or a request about this Privacy Policy or
+      about the application, please contact us:
+    </p>
+    <dl class="kv">
+      <dt>Developer</dt><dd>FB COMPANY</dd>
+      <dt>Application</dt><dd>Arkivo</dd>
+      <dt>Email</dt>
+      <dd><a class="mail" href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a></dd>
+    </dl>
+    <p>
+      We aim to respond to genuine enquiries within a reasonable period.
+    </p>
+    <p>
+      See also our <a href="terms-of-use.html">Terms of Use</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p>
+      <strong>FB COMPANY</strong> &nbsp;&middot;&nbsp; <strong>Arkivo</strong>
+    </p>
+    <p>
+      <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a>
+      &nbsp;&middot;&nbsp; Privacy Policy last updated 10 August 2026
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

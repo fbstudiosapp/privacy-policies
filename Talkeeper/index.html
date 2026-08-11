@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index, follow" />
+<meta name="description"
+      content="Privacy Policy for Talkeeper - Voice Recorder &amp; Speech to Text, an offline-first Android app by FB COMPANY." />
+<title>Privacy Policy &middot; Talkeeper - Voice Recorder &amp; Speech to Text</title>
+<style>
+  :root {
+    --bg: #f4f6fb;
+    --surface: #ffffff;
+    --surface-alt: #eef2fb;
+    --text: #16202e;
+    --muted: #55637a;
+    --brand: #2f6bff;
+    --brand-dark: #1b4bcc;
+    --border: #dfe5f2;
+    --ok: #11a67b;
+    --warn: #b5761d;
+    --radius: 16px;
+    --maxw: 860px;
+  }
+
+  /* Dark palette. Applied automatically in a browser via the media query, and
+     explicitly inside the Talkeeper app, which sets
+     <html data-theme="dark"> so the document follows the app theme rather than
+     the operating system. */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1420;
+      --surface: #161e2c;
+      --surface-alt: #1d2738;
+      --text: #e8edf7;
+      --muted: #a3b0c6;
+      --brand: #7aa2ff;
+      --brand-dark: #a9c2ff;
+      --border: #27334a;
+      --ok: #3fd3a5;
+      --warn: #e0a955;
+    }
+  }
+
+  html[data-theme="dark"] {
+    --bg: #0e1420;
+    --surface: #161e2c;
+    --surface-alt: #1d2738;
+    --text: #e8edf7;
+    --muted: #a3b0c6;
+    --brand: #7aa2ff;
+    --brand-dark: #a9c2ff;
+    --border: #27334a;
+    --ok: #3fd3a5;
+    --warn: #e0a955;
+  }
+
+  html[data-theme="light"] {
+    --bg: #f4f6fb;
+    --surface: #ffffff;
+    --surface-alt: #eef2fb;
+    --text: #16202e;
+    --muted: #55637a;
+    --brand: #2f6bff;
+    --brand-dark: #1b4bcc;
+    --border: #dfe5f2;
+    --ok: #11a67b;
+    --warn: #b5761d;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    padding: 0 16px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; }
+
+  header.hero {
+    margin: 28px 0 24px;
+    padding: 30px 26px;
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+    border-radius: 22px;
+    color: #fff;
+  }
+
+  header.hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.85;
+    margin: 0 0 10px;
+  }
+
+  header.hero h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  header.hero p.sub { margin: 0; font-size: 16px; opacity: 0.92; }
+
+  .identity {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    margin-bottom: 22px;
+  }
+
+  .identity dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(150px, auto) 1fr;
+    gap: 8px 18px;
+  }
+
+  .identity dt {
+    font-weight: 700;
+    color: var(--muted);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-top: 3px;
+  }
+
+  .identity dd { margin: 0; font-size: 17px; font-weight: 600; }
+
+  @media (max-width: 560px) {
+    .identity dl { grid-template-columns: 1fr; gap: 2px 0; }
+    .identity dd { margin-bottom: 12px; }
+    .identity dd:last-child { margin-bottom: 0; }
+    header.hero h1 { font-size: 25px; }
+    body { font-size: 16px; }
+  }
+
+  .dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+
+  .pill {
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    margin-bottom: 30px;
+  }
+
+  nav.toc h2 { margin: 0 0 10px; font-size: 16px; letter-spacing: 0.03em; }
+
+  nav.toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; }
+
+  @media (max-width: 620px) { nav.toc ol { columns: 1; } }
+
+  nav.toc li { margin-bottom: 5px; font-size: 15px; }
+
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 24px 8px;
+    margin-bottom: 18px;
+  }
+
+  section h2 {
+    margin: 0 0 12px;
+    font-size: 21px;
+    line-height: 1.35;
+    scroll-margin-top: 18px;
+  }
+
+  section h3 { margin: 22px 0 8px; font-size: 17px; }
+
+  p { margin: 0 0 16px; }
+
+  ul, ol { margin: 0 0 16px; padding-left: 22px; }
+
+  li { margin-bottom: 8px; }
+
+  a { color: var(--brand); text-decoration: none; border-bottom: 1px solid transparent; }
+
+  a:hover, a:focus { border-bottom-color: currentColor; }
+
+  strong { font-weight: 700; }
+
+  code {
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-size: 0.9em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  .callout {
+    border-left: 4px solid var(--ok);
+    background: var(--surface-alt);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 0 0 18px;
+  }
+
+  .callout.warn { border-left-color: var(--warn); }
+
+  .callout p:last-child { margin-bottom: 0; }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 18px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    min-width: 520px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 11px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--surface-alt);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 0 8px;
+  }
+
+  footer a { font-weight: 600; }
+
+  .backtotop { display: inline-block; margin-top: 4px; font-size: 14px; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Talkeeper &mdash; Voice Recorder &amp; Speech to Text</h1>
+    <p class="sub">How the app handles your recordings, your transcripts and your data.</p>
+  </header>
+
+  <div class="identity">
+    <dl>
+      <dt>Developer Name</dt>
+      <dd>FB COMPANY</dd>
+
+      <dt>App Name</dt>
+      <dd>Talkeeper &mdash; Voice Recorder &amp; Speech to Text</dd>
+
+      <dt>Support Email</dt>
+      <dd><a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a></dd>
+
+      <dt>Application ID</dt>
+      <dd><code>com.fbcompany.talkeeper</code></dd>
+
+      <dt>Platform</dt>
+      <dd>Android (distributed through Google Play)</dd>
+    </dl>
+  </div>
+
+  <div class="dates">
+    <span class="pill">Effective date: 9 August 2026</span>
+    <span class="pill">Last updated: 9 August 2026</span>
+    <span class="pill">Policy version: 1.0</span>
+  </div>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Application overview</a></li>
+      <li><a href="#summary">Short summary</a></li>
+      <li><a href="#microphone">Microphone access</a></li>
+      <li><a href="#recordings">Audio recordings</a></li>
+      <li><a href="#speech">Speech recognition and speech-to-text</a></li>
+      <li><a href="#local-storage">Local device storage</a></li>
+      <li><a href="#uploads">Are recordings uploaded?</a></li>
+      <li><a href="#personal-data">Personal data handling</a></li>
+      <li><a href="#permissions">Permissions used</a></li>
+      <li><a href="#ads">Advertising and Google AdMob</a></li>
+      <li><a href="#ad-id">Advertising identifier</a></li>
+      <li><a href="#billing">Google Play Billing and purchases</a></li>
+      <li><a href="#third-parties">Third-party services</a></li>
+      <li><a href="#google-services">Google services used</a></li>
+      <li><a href="#data-flow">Local data vs third-party processing</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#deletion">Data deletion</a></li>
+      <li><a href="#children">Children&rsquo;s privacy</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2>1. Application overview</h2>
+    <p>
+      Talkeeper is an offline-first Android voice recorder with speech-to-text. With Talkeeper you can
+      record, pause, resume and stop audio; play back, rename, delete and share recordings; dictate
+      text in real time using live speech recognition; convert an existing recording into text where
+      the device supports it; and edit, copy, share, search and delete the resulting transcripts.
+    </p>
+    <p>
+      Talkeeper has <strong>no user accounts, no sign-in, no cloud sync and no backend server
+      operated by FB COMPANY</strong>. Your recordings, your transcripts and your settings are created
+      and stored on your own device.
+    </p>
+    <p>
+      This policy explains what stays on your device, and which third-party components (Google AdMob,
+      Google Play Billing and the speech recognition service that is part of your device&rsquo;s
+      operating system) may process data when you use the corresponding features.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="summary">
+    <h2>2. Short summary</h2>
+    <ul>
+      <li>Audio recordings and transcripts are stored <strong>only in Talkeeper&rsquo;s private folder on your device</strong>.</li>
+      <li>FB COMPANY does <strong>not</strong> receive, collect, store or transmit your recordings or transcripts.</li>
+      <li>Talkeeper asks for <strong>one</strong> sensitive runtime permission: the microphone, and only when you start recording or a speech session.</li>
+      <li>Live speech-to-text is performed by the <strong>speech recognition service installed on your device</strong> (on most Android phones this is a Google service). Depending on your device and the language packs you have downloaded, that service may work fully offline or may process the audio through Google&rsquo;s servers.</li>
+      <li>The free version shows ads through <strong>Google AdMob</strong>, which may use an advertising identifier and similar technical data.</li>
+      <li>Purchases are processed by <strong>Google Play Billing</strong>. FB COMPANY never sees your payment details.</li>
+      <li>Uninstalling Talkeeper deletes all recordings, transcripts and settings created by the app.</li>
+    </ul>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="microphone">
+    <h2>3. Microphone access</h2>
+    <p>
+      The microphone permission (<code>android.permission.RECORD_AUDIO</code>) is required for
+      Talkeeper&rsquo;s core purpose: capturing audio and converting speech into text. Without it the
+      app cannot record and cannot dictate.
+    </p>
+    <h3>When it is requested</h3>
+    <ul>
+      <li>The permission is <strong>not</strong> requested when you open the app.</li>
+      <li>It is requested the first time you tap <em>Start recording</em>, start a live speech-to-text session, or transcribe an existing recording.</li>
+      <li>Before the system dialog appears, Talkeeper shows a short explanation of why the microphone is needed.</li>
+    </ul>
+    <h3>How it is used</h3>
+    <ul>
+      <li>The microphone is only active during an explicit recording or recognition session that you started.</li>
+      <li>There is no background listening, no always-on trigger word and no hidden capture. Talkeeper does not run a background recording service.</li>
+      <li>The recording screen always shows the current state (ready, recording, paused) and the elapsed time.</li>
+      <li>You can revoke the permission at any time in Android <em>Settings &rsaquo; Apps &rsaquo; Talkeeper &rsaquo; Permissions</em>. Recording and dictation stop working, and the rest of the app (playback, transcripts, search) keeps working.</li>
+    </ul>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="recordings">
+    <h2>4. Audio recordings</h2>
+    <p>
+      Every recording you make is written to a file inside Talkeeper&rsquo;s own private application
+      directory. Depending on the quality preset you select, the format is AAC (<code>.m4a</code>) or
+      uncompressed WAV (<code>.wav</code>).
+    </p>
+    <p>Alongside each audio file, Talkeeper stores a small local index entry containing:</p>
+    <ul>
+      <li>the file name and the title you gave the recording,</li>
+      <li>the creation date and time, the duration and the file size,</li>
+      <li>technical audio settings (sample rate, bit rate, number of channels),</li>
+      <li>a reference to the transcript that belongs to the recording, if there is one,</li>
+      <li>whether you marked the recording as a favourite.</li>
+    </ul>
+    <p>
+      This index is a plain local file. It is never sent anywhere. Renaming a recording renames the
+      local file; deleting a recording deletes the audio file and its transcript.
+    </p>
+    <div class="callout">
+      <p>
+        <strong>Sharing is always your decision.</strong> A recording leaves the app only when you tap
+        <em>Share</em> and then choose a target application yourself (for example email, a messenger or
+        a cloud drive). From that moment the receiving app&rsquo;s own privacy policy applies to the
+        copy you sent. Talkeeper cannot control or withdraw content you have shared.
+      </p>
+    </div>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="speech">
+    <h2>5. Speech recognition and speech-to-text processing</h2>
+    <p>
+      Talkeeper does not contain its own speech recognition engine. It uses the standard Android speech
+      recognition interface, which is served by the recognition service installed on your device. On
+      most Android phones this is a Google component (for example the Google app or
+      <em>Speech Recognition &amp; Synthesis</em>).
+    </p>
+    <h3>Where the processing happens</h3>
+    <p>
+      This is decided by your device and its configuration, not by Talkeeper:
+    </p>
+    <ul>
+      <li>
+        <strong>On-device (offline) recognition</strong> happens when the language pack for the selected
+        recognition language has been downloaded on your device and the system recogniser chooses to
+        work locally. In that case the audio does not leave the device.
+      </li>
+      <li>
+        <strong>Network-assisted recognition</strong> happens when the system recogniser decides to use
+        an online model. In that case the audio captured during the recognition session is transmitted
+        to and processed by the provider of that recognition service (normally Google) under
+        <em>their</em> privacy policy, not this one.
+      </li>
+    </ul>
+    <div class="callout warn">
+      <p>
+        Talkeeper cannot force or guarantee offline recognition on every device. To keep recognition on
+        the device, install the offline language pack for your language in the Android system settings
+        for speech and voice input. Talkeeper&rsquo;s recognition-language screen lists exactly the
+        languages the recogniser on your device reports as available.
+      </p>
+    </div>
+    <h3>Transcribing an existing recording</h3>
+    <p>
+      Android&rsquo;s recogniser cannot be fed an audio file directly. When you use
+      <em>Transcribe this recording</em>, Talkeeper plays the recording out loud through the device
+      speaker and lets the on-device recogniser listen to it. The app states this clearly on that
+      screen before you start. The audio itself is never uploaded by Talkeeper; what happens to the
+      captured speech afterwards is governed by the recognition service, as described above.
+    </p>
+    <h3>What Talkeeper stores</h3>
+    <p>
+      Only the recognised <strong>text</strong> is stored, in Talkeeper&rsquo;s local transcript index,
+      together with the title, the creation and update timestamps, the recognition language identifier,
+      the source (live session or from a recording) and the link to the related recording. You can edit
+      or delete any transcript at any time.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="local-storage">
+    <h2>6. Local device storage</h2>
+    <p>Talkeeper writes to exactly three places, all of them local:</p>
+    <ul>
+      <li><strong>The app&rsquo;s private files directory</strong> &ndash; audio recordings, the recordings index, the transcripts index, and temporary export files you create with the export/share actions.</li>
+      <li><strong>The app&rsquo;s preferences store</strong> &ndash; your settings (theme, app language, recording quality, recognition language, recogniser options) and the cached list of purchases Google Play reports for your account.</li>
+      <li><strong>Files you deliberately export or share</strong> &ndash; these are handed to the app you choose in the Android share sheet.</li>
+    </ul>
+    <p>
+      The private application directory is not readable by other apps, needs no storage permission, and
+      is removed by Android when Talkeeper is uninstalled. Talkeeper does not request
+      <code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code> or any
+      <code>READ_MEDIA_*</code> permission, and it does not scan your photo, video or music library.
+    </p>
+    <p>
+      Android cloud backup and device-to-device transfer are disabled for Talkeeper&rsquo;s data, so
+      your recordings are not copied into a Google backup of your device.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="uploads">
+    <h2>7. Are recordings uploaded?</h2>
+    <p>
+      <strong>No.</strong> Talkeeper never uploads your audio files or transcripts to FB COMPANY or to
+      any server operated by FB COMPANY. There is no FB COMPANY backend, no analytics service and no
+      crash-reporting service in this app.
+    </p>
+    <p>To be accurate and complete, there are exactly two situations where content can leave the device:</p>
+    <ol>
+      <li>
+        <strong>You share or export it.</strong> You tap <em>Share</em> or <em>Export</em> and pick a
+        destination app yourself.
+      </li>
+      <li>
+        <strong>Your device&rsquo;s speech recogniser uses an online model.</strong> As explained in
+        <a href="#speech">section 5</a>, the audio of a recognition session may then be processed by the
+        provider of that recognition service (normally Google).
+      </li>
+    </ol>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="personal-data">
+    <h2>8. Personal data handling</h2>
+    <p>FB COMPANY does <strong>not</strong> collect, receive or store:</p>
+    <ul>
+      <li>your name, email address, phone number or postal address,</li>
+      <li>account credentials (there is no account to create),</li>
+      <li>your contacts, calendar, SMS or call log,</li>
+      <li>your precise or approximate location,</li>
+      <li>your photos, videos or music library,</li>
+      <li>your audio recordings or transcripts,</li>
+      <li>health, financial or biometric data.</li>
+    </ul>
+    <p>
+      Recordings can of course contain personal information, because they contain voices and whatever is
+      said. That content stays under your control on your device; treat it the way you would treat any
+      other private file, especially before sharing it.
+    </p>
+    <p>
+      If you contact support by email, FB COMPANY receives the email address you write from and the
+      content of your message. That correspondence is used solely to answer your request and is kept no
+      longer than necessary for that purpose.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="permissions">
+    <h2>9. Permissions used by the application</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Type</th>
+            <th>Why it is needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>RECORD_AUDIO</code></td>
+            <td>Runtime (sensitive)</td>
+            <td>Core function: record audio and convert speech to text. Requested only when you start a recording or a speech session.</td>
+          </tr>
+          <tr>
+            <td><code>INTERNET</code></td>
+            <td>Normal (no prompt)</td>
+            <td>Required by Google AdMob to load ads and by Google Play Billing to fetch prices and validate purchases.</td>
+          </tr>
+          <tr>
+            <td><code>ACCESS_NETWORK_STATE</code></td>
+            <td>Normal (no prompt)</td>
+            <td>Used by the Google Mobile Ads SDK to check connectivity before requesting an ad.</td>
+          </tr>
+          <tr>
+            <td><code>com.google.android.gms.permission.AD_ID</code></td>
+            <td>Normal (no prompt)</td>
+            <td>Allows the ads SDK to access the Android advertising ID for ad delivery and frequency capping. See <a href="#ad-id">section 11</a>.</td>
+          </tr>
+          <tr>
+            <td><code>WAKE_LOCK</code></td>
+            <td>Normal (no prompt)</td>
+            <td>Keeps the screen awake during a recording session when you enable that option in Settings.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Talkeeper does <strong>not</strong> declare storage or media permissions, location permissions,
+      contacts permissions, camera permission, phone or SMS permissions, or the
+      <code>QUERY_ALL_PACKAGES</code> permission.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="ads">
+    <h2>10. Advertising and Google AdMob</h2>
+    <p>
+      The free version of Talkeeper is funded by advertising delivered through
+      <strong>Google AdMob</strong> (the Google Mobile Ads SDK). Ad formats used are a banner at the
+      bottom of list screens, one native ad card inside the recordings list, and an occasional
+      full-screen interstitial.
+    </p>
+    <h3>How ads are placed</h3>
+    <ul>
+      <li>No ads are shown on the recording screen, and no full-screen ad can appear while audio is being recorded or while a speech recognition session is running.</li>
+      <li>Interstitials appear only at natural break points, such as after a transcript has been saved, and are rate limited.</li>
+      <li>Ads are labelled as advertising and never disguised as app content or as a system message.</li>
+    </ul>
+    <h3>What the ads SDK may process</h3>
+    <p>
+      To serve, measure and cap ads, Google and its ad partners may process technical and usage data
+      such as:
+    </p>
+    <ul>
+      <li>the advertising identifier of the device (or an equivalent identifier),</li>
+      <li>IP address and derived coarse location (for example country or region),</li>
+      <li>device model, operating system version, language and screen characteristics,</li>
+      <li>ad interaction events (an ad was requested, shown, clicked or dismissed).</li>
+    </ul>
+    <p>
+      This processing happens inside the Google Mobile Ads SDK. FB COMPANY does not receive this data in
+      an identifiable form; it only sees aggregated earnings and performance reports in the AdMob
+      console. For details see the
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google Privacy &amp; Terms: how Google uses information from sites or apps that use its services</a>
+      and the
+      <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob help centre</a>.
+    </p>
+    <h3>Consent</h3>
+    <p>
+      Talkeeper integrates Google&rsquo;s User Messaging Platform (UMP). If you are in a region that
+      requires it (for example the European Economic Area, the United Kingdom, or certain US states),
+      a consent message is shown before personalised ads are requested, and you can change your choice
+      later at any time through <em>Settings &rsaquo; Ad privacy settings</em> (this entry appears only
+      where a privacy options form is required). If you withhold consent, ads may still be shown in a
+      non-personalised form.
+    </p>
+    <h3>Removing ads</h3>
+    <p>
+      Buying <em>Remove ads</em> or any <em>Talkeeper Pro</em> product disables the ad SDK entirely: no
+      further ad requests are made from the app.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="ad-id">
+    <h2>11. Advertising identifier</h2>
+    <p>
+      Talkeeper declares the <code>com.google.android.gms.permission.AD_ID</code> permission because the
+      Google Mobile Ads SDK uses the Android advertising ID for ad delivery, frequency capping and
+      fraud prevention. The advertising ID is a resettable, non-permanent identifier that is not tied
+      to your name.
+    </p>
+    <p>You control it on your device:</p>
+    <ul>
+      <li>Android <em>Settings &rsaquo; Privacy &rsaquo; Ads</em> (wording varies by manufacturer) lets you <strong>reset</strong> the advertising ID.</li>
+      <li>The same screen lets you <strong>delete</strong> the advertising ID, after which apps can no longer read it.</li>
+    </ul>
+    <p>Users who purchase an ad-free product are not subject to any ad-related identifier use in this app.</p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="billing">
+    <h2>12. Google Play Billing and in-app purchases</h2>
+    <p>
+      Talkeeper offers optional paid upgrades. All payments are handled by
+      <strong>Google Play Billing</strong>. Talkeeper never sees or stores your card number, bank
+      details, billing address or Google account password.
+    </p>
+    <h3>What is offered</h3>
+    <ul>
+      <li><strong>Remove ads</strong> &ndash; a one-time purchase that hides all advertising.</li>
+      <li><strong>Talkeeper Pro lifetime</strong> &ndash; a one-time purchase unlocking all Pro features.</li>
+      <li><strong>Talkeeper Pro monthly / yearly</strong> &ndash; auto-renewing subscriptions unlocking all Pro features.</li>
+    </ul>
+    <p>
+      Pro features are: no advertising, Studio and lossless WAV recording quality, transcript export as
+      <code>.txt</code> and <code>.srt</code>, unlimited live transcription session length, variable
+      playback speed, and bulk export tools. Every other feature &mdash; recording, pausing, resuming,
+      stopping, playback, renaming, deleting, sharing, live speech-to-text, transcript editing and
+      search &mdash; is available free of charge.
+    </p>
+    <h3>Transparency</h3>
+    <ul>
+      <li>The price shown in the app is the localised price supplied by Google Play, including the billing period for subscriptions.</li>
+      <li>Subscriptions renew automatically until you cancel them. You can cancel at any time in the Google Play app under <em>Payments &amp; subscriptions &rsaquo; Subscriptions</em>. Cancelling stops future renewals; it does not retroactively refund the current period.</li>
+      <li>Nothing is charged automatically and no purchase is pre-selected. There is no trial that silently converts into a paid subscription.</li>
+    </ul>
+    <h3>What Talkeeper stores about purchases</h3>
+    <p>
+      Only the product identifiers that Google Play reports as owned by the signed-in Google account,
+      cached locally so that paid features continue to work offline. This cache contains no payment
+      information and no account identifier. It is refreshed against Google Play each time the app
+      starts and whenever you tap <em>Restore purchases</em>, which is also what removes access again
+      after a refund or an expired subscription.
+    </p>
+    <p>
+      Because Talkeeper has no backend, purchases are validated against Google Play on the device
+      itself rather than on a server. Refunds and billing disputes are handled by Google Play; see the
+      <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">Google Play refund help page</a>.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="third-parties">
+    <h2>13. Third-party services</h2>
+    <p>
+      Talkeeper is not a &ldquo;no third parties at all&rdquo; app, and this policy does not claim
+      otherwise. The following third-party components are part of the app or are used by it:
+    </p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Service / component</th>
+            <th>Provider</th>
+            <th>Purpose</th>
+            <th>Privacy information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google Mobile Ads SDK (AdMob) + User Messaging Platform</td>
+            <td>Google</td>
+            <td>Showing ads in the free version and collecting consent where required</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Google Play Billing</td>
+            <td>Google</td>
+            <td>Processing in-app purchases and subscriptions</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Android speech recognition service</td>
+            <td>Google or your device manufacturer</td>
+            <td>Converting speech to text; may run on-device or through the provider&rsquo;s servers</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Google Play Store / Google Play services</td>
+            <td>Google</td>
+            <td>App distribution, updates and the platform services the SDKs above rely on</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Apps you share content with</td>
+            <td>Their own developers</td>
+            <td>Receiving a recording, a transcript or an exported file that you chose to send</td>
+            <td>See the policy of the receiving app</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Talkeeper contains <strong>no</strong> analytics SDK, no crash reporting SDK, no attribution or
+      tracking SDK beyond the ads SDK described above, and no social network SDK.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="google-services">
+    <h2>14. Google services used by the application</h2>
+    <ul>
+      <li><strong>Google AdMob</strong> &ndash; advertising in the free version.</li>
+      <li><strong>Google User Messaging Platform</strong> &ndash; regional consent messages for advertising.</li>
+      <li><strong>Google Play Billing</strong> &ndash; in-app purchases and subscriptions.</li>
+      <li><strong>Android speech recognition</strong> &ndash; on most devices provided by Google.</li>
+      <li><strong>Google Play</strong> &ndash; distribution and updates of the app itself.</li>
+    </ul>
+    <p>
+      All of these are governed by the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+      and, where applicable, the
+      <a href="https://play.google.com/intl/en/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play Terms of Service</a>.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="data-flow">
+    <h2>15. Local data versus data processed by third parties</h2>
+    <h3>Stored locally on your device only</h3>
+    <ul>
+      <li>Audio recordings (<code>.m4a</code> / <code>.wav</code>) and their local metadata index.</li>
+      <li>Transcripts and their local metadata index.</li>
+      <li>App settings: theme, interface language, recording quality, recognition language, recogniser options, sort order.</li>
+      <li>The locally cached list of purchased product identifiers.</li>
+      <li>Temporary export files you generate yourself.</li>
+    </ul>
+    <h3>May be processed by third parties</h3>
+    <ul>
+      <li><strong>Advertising data</strong> (advertising ID, IP address, coarse location, device and ad interaction data) &ndash; by Google AdMob, only while ads are enabled.</li>
+      <li><strong>Purchase data</strong> (product identifiers, purchase tokens, payment processing) &ndash; by Google Play Billing when you buy something.</li>
+      <li><strong>Speech audio of a recognition session</strong> &ndash; by the speech recognition service on your device, when it uses an online model rather than an offline language pack.</li>
+      <li><strong>Anything you share</strong> &ndash; by the app you selected in the share sheet.</li>
+    </ul>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="retention">
+    <h2>16. Data retention</h2>
+    <ul>
+      <li><strong>Recordings and transcripts</strong> are kept until you delete them or uninstall the app. Talkeeper does not expire, auto-delete or auto-archive them.</li>
+      <li><strong>Settings and the purchase cache</strong> are kept until you clear the app&rsquo;s data or uninstall the app.</li>
+      <li><strong>Export files</strong> are temporary and are cleared when you run <em>Remove orphaned files</em> in storage management, or on uninstall.</li>
+      <li><strong>Support emails</strong> are kept only as long as needed to handle your request.</li>
+      <li><strong>Advertising and purchase data</strong> held by Google are retained according to Google&rsquo;s own retention policies, which FB COMPANY does not control.</li>
+    </ul>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="deletion">
+    <h2>17. Data deletion</h2>
+    <p>Because everything is local, you can delete your data yourself at any time:</p>
+    <ul>
+      <li><strong>One recording</strong> &ndash; open the recording&rsquo;s menu and choose <em>Delete</em>. The audio file and its transcript are removed.</li>
+      <li><strong>One transcript</strong> &ndash; open the transcript and choose <em>Delete</em>.</li>
+      <li><strong>Everything at once</strong> &ndash; <em>Settings &rsaquo; Storage management</em> offers <em>Delete all recordings</em> and <em>Delete all transcripts</em>, plus <em>Remove orphaned files</em>.</li>
+      <li><strong>All app data</strong> &ndash; Android <em>Settings &rsaquo; Apps &rsaquo; Talkeeper &rsaquo; Storage &rsaquo; Clear storage</em>.</li>
+      <li><strong>Uninstall</strong> &ndash; removes the app together with every recording, transcript and setting it created.</li>
+    </ul>
+    <p>
+      Deletion inside the app is immediate and permanent; there is no recycle bin and no remote copy to
+      recover from. Export or share anything you want to keep before deleting it.
+    </p>
+    <p>
+      To ask a question about deletion, or to request deletion of support correspondence, write to
+      <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a>. FB COMPANY cannot delete
+      recordings or transcripts on your device on your behalf, because it has no access to them.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="children">
+    <h2>18. Children&rsquo;s privacy</h2>
+    <p>
+      Talkeeper is a general-purpose productivity tool. It is <strong>not</strong> directed at children
+      and is not designed or marketed for them. It is not part of Google Play&rsquo;s Designed for
+      Families programme.
+    </p>
+    <p>
+      FB COMPANY does not knowingly collect personal information from children. Since the app collects
+      no personal data at all, there is nothing about a child that could be collected by FB COMPANY. Ad
+      requests are configured with a family-safe maximum content rating.
+    </p>
+    <p>
+      If a child uses the app on a shared device, a parent or guardian should be aware that the app can
+      record audio and that recordings stay on the device. Parents who believe a child has sent
+      information to the support email address may contact
+      <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a> and it will be deleted.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="security">
+    <h2>19. Security</h2>
+    <ul>
+      <li>Recordings, transcripts and settings live in Talkeeper&rsquo;s private application directory, which the Android sandbox keeps inaccessible to other apps.</li>
+      <li>No credentials, tokens or personal data are transmitted by the app, because there is no account system and no FB COMPANY server.</li>
+      <li>Android cloud backup and device-to-device transfer are disabled for the app&rsquo;s data, so recordings are not duplicated off the device by a system backup.</li>
+      <li>Network traffic generated by the Google SDKs uses the encrypted connections those SDKs establish.</li>
+      <li>The index files are written atomically, so an interrupted write cannot corrupt your library.</li>
+    </ul>
+    <p>
+      No security measure is absolute. Device-level protection matters: use a screen lock, keep Android
+      and the app updated, install apps only from trusted sources, and be careful about where you share
+      recordings. If your device is lost, unlocked or shared, the recordings on it can be accessed by
+      whoever holds the device.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="rights">
+    <h2>20. Your rights</h2>
+    <p>
+      Depending on where you live, data protection law (for example the GDPR in the EEA and the UK, or
+      the CCPA/CPRA in California) gives you rights over your personal data, including access,
+      rectification, erasure, restriction, portability and objection, as well as the right not to be
+      discriminated against for exercising them.
+    </p>
+    <p>How these apply here:</p>
+    <ul>
+      <li>
+        <strong>Data on your device.</strong> You exercise these rights directly. You already have full
+        access, you can edit any transcript, you can rename or delete anything, and you can export your
+        transcripts to <code>.txt</code> or <code>.srt</code> files for portability. FB COMPANY holds no
+        copy and cannot act on this data.
+      </li>
+      <li>
+        <strong>Advertising data.</strong> Use the in-app <em>Ad privacy settings</em> entry where it is
+        available, and the advertising ID controls in your Android settings. For requests addressed to
+        Google as controller, use the channels in the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+      </li>
+      <li>
+        <strong>Purchase data.</strong> Handled by Google Play under your Google account.
+      </li>
+      <li>
+        <strong>Support correspondence.</strong> Email
+        <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a> to access or delete it.
+      </li>
+    </ul>
+    <p>
+      FB COMPANY does not sell or share personal information for cross-context behavioural advertising
+      in the sense of the CCPA/CPRA, and does not build user profiles.
+    </p>
+    <p>
+      If you are in the EEA or the UK and believe your data has been handled unlawfully, you may lodge a
+      complaint with your national data protection authority.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="changes">
+    <h2>21. Changes to this privacy policy</h2>
+    <p>
+      This policy may be updated when the app changes, when a third-party service changes, or when the
+      law requires it. The <em>Last updated</em> date at the top of the page always reflects the current
+      version, and the previous effective date is replaced when a new version is published.
+    </p>
+    <p>
+      Material changes &mdash; for example adding a new SDK that processes data, or a new category of
+      processing &mdash; will be reflected here before or at the time the corresponding app update is
+      released, and the updated policy will be linked from the Google Play listing and from
+      <em>Settings &rsaquo; Privacy Policy</em> inside the app. Continuing to use Talkeeper after an
+      update means you accept the revised policy.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>22. Contact information</h2>
+    <p>For any question, request or complaint about privacy in Talkeeper:</p>
+    <ul>
+      <li><strong>Developer:</strong> FB COMPANY</li>
+      <li><strong>App:</strong> Talkeeper &mdash; Voice Recorder &amp; Speech to Text (<code>com.fbcompany.talkeeper</code>)</li>
+      <li><strong>Email:</strong> <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a></li>
+    </ul>
+    <p>
+      Please include your device model and Android version when reporting a technical problem. Do not
+      attach recordings that contain sensitive information; they are not needed to answer a support
+      request.
+    </p>
+    <p><a class="backtotop" href="#overview">Back to top &uarr;</a></p>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2026 FB COMPANY &middot; Talkeeper &mdash; Voice Recorder &amp; Speech to Text<br />
+      Support: <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

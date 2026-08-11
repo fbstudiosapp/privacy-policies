@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for Keystrand - Password Generator, an offline password generator published by FB COMPANY.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f5bd5">
+<title>Privacy Policy | Keystrand - Password Generator | FB COMPANY</title>
+<style>
+  /* ---------------------------------------------------------------
+     All styling is inlined so this file can be uploaded on its own,
+     with no build step and no external CSS or font dependency.
+     --------------------------------------------------------------- */
+  :root {
+    --accent: #4f5bd5;
+    --accent-dark: #3a45b0;
+    --accent-soft: #eef0fc;
+    --ink: #16181d;
+    --ink-soft: #4a4f5a;
+    --ink-faint: #6b7280;
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --line: #e3e6ef;
+    --callout-bg: #fff8e6;
+    --callout-line: #e8a300;
+    --radius: 14px;
+    --maxw: 820px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px 72px; }
+
+  /* --- Header --- */
+  header.masthead {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: #fff;
+    padding: 44px 20px 40px;
+  }
+  header.masthead .inner { max-width: var(--maxw); margin: 0 auto; }
+  .eyebrow {
+    display: inline-block;
+    font-size: .74rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: rgba(255,255,255,.16);
+    border: 1px solid rgba(255,255,255,.28);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  header.masthead h1 {
+    margin: 0 0 20px;
+    font-size: clamp(1.75rem, 5.4vw, 2.6rem);
+    line-height: 1.18;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .identity { margin: 0; padding: 0; list-style: none; }
+  .identity li {
+    font-size: 1rem;
+    margin: 0 0 6px;
+    color: rgba(255,255,255,.95);
+    word-break: break-word;
+  }
+  .identity strong { font-weight: 700; }
+  .identity a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* --- Meta bar --- */
+  .meta {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 14px 20px;
+    font-size: .9rem;
+    color: var(--ink-faint);
+  }
+
+  /* --- Cards --- */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 0 0 18px;
+  }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); margin: 0; }
+
+  /* --- Table of contents --- */
+  nav.toc h2 {
+    font-size: .78rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 12px;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 22px;
+    columns: 2;
+    column-gap: 28px;
+  }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a { color: var(--accent-dark); text-decoration: none; font-size: .95rem; }
+  nav.toc a:hover, nav.toc a:focus { text-decoration: underline; }
+
+  /* --- Sections --- */
+  section { scroll-margin-top: 20px; }
+  section h2 {
+    font-size: clamp(1.15rem, 3.4vw, 1.4rem);
+    line-height: 1.32;
+    font-weight: 750;
+    color: var(--ink);
+    margin: 38px 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-soft);
+  }
+  section h2 .num {
+    display: inline-block;
+    min-width: 1.7em;
+    color: var(--accent);
+    font-weight: 800;
+  }
+  p { margin: 0 0 14px; }
+  ul.bullets { margin: 0 0 16px; padding-left: 22px; }
+  ul.bullets li { margin-bottom: 8px; }
+
+  .callout {
+    background: var(--callout-bg);
+    border: 1px solid #f0d9a0;
+    border-left: 5px solid var(--callout-line);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 0 0 16px;
+    font-weight: 500;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  dl.kv { margin: 0; }
+  dl.kv dt { font-weight: 700; margin-top: 12px; }
+  dl.kv dd { margin: 2px 0 0; padding: 0; color: var(--ink-soft); }
+
+  a { color: var(--accent-dark); }
+  a:hover, a:focus { color: var(--accent); }
+
+  code {
+    background: #eef0f6;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: .88em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    word-break: break-all;
+  }
+
+  /* --- Contact block --- */
+  .contact {
+    background: var(--accent-soft);
+    border: 1px solid #d5d9f5;
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin-top: 30px;
+  }
+  .contact h2 { border: 0; margin-top: 0; padding: 0; }
+  .mail {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    word-break: break-all;
+  }
+
+  /* --- Footer --- */
+  footer.site {
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    padding: 26px 20px 40px;
+    text-align: center;
+    color: var(--ink-faint);
+    font-size: .9rem;
+  }
+  footer.site .inner { max-width: var(--maxw); margin: 0 auto; }
+  footer.site strong { color: var(--ink); }
+
+  /* --- Small screens --- */
+  @media (max-width: 620px) {
+    body { font-size: 16px; }
+    header.masthead { padding: 32px 18px 30px; }
+    .wrap { padding: 0 16px 56px; }
+    .card, .contact { padding: 18px 16px; border-radius: 12px; }
+    nav.toc ol { columns: 1; }
+    section h2 { margin-top: 30px; }
+  }
+
+  /* --- Print --- */
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    header.masthead { background: #fff; color: #000; border-bottom: 2px solid #000; }
+    .identity li, .eyebrow { color: #000; }
+    nav.toc { display: none; }
+    .card, .contact { border: 0; padding: 0; }
+  }
+
+  /* --- Reduced motion / focus visibility --- */
+  a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="inner">
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>Keystrand &ndash; Password Generator</h1>
+    <ul class="identity">
+      <li><strong>Developer:</strong> FB COMPANY</li>
+      <li><strong>Application:</strong> Keystrand &ndash; Password Generator</li>
+      <li><strong>Support:</strong> <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="meta">Last updated: 9 August 2026 &nbsp;&middot;&nbsp; Effective date: 9 August 2026</div>
+
+<main class="wrap">
+
+  <div class="card">
+    <p class="lede">
+      This Privacy Policy explains how Keystrand handles information. Keystrand is a
+      password generator that runs locally on your device. Please read this policy
+      together with the Terms of Use.
+    </p>
+  </div>
+
+  <nav class="toc card" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#developer">Developer and Application Information</a></li>
+      <li><a href="#collect">Information We Collect</a></li>
+      <li><a href="#do-not-collect">Information We Do Not Collect</a></li>
+      <li><a href="#local">Local Data Processing</a></li>
+      <li><a href="#passwords">Password Generation and Security</a></li>
+      <li><a href="#advertising">Advertising</a></li>
+      <li><a href="#admob">Google AdMob</a></li>
+      <li><a href="#iap">In-App Purchases</a></li>
+      <li><a href="#billing">Google Play Billing</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#security">Data Security</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#rights">User Rights</a></li>
+      <li><a href="#international">International Users</a></li>
+      <li><a href="#changes">Changes to This Privacy Policy</a></li>
+      <li><a href="#contact">Contact Information</a></li>
+    </ol>
+  </nav>
+
+  <section id="introduction">
+    <h2><span class="num">1.</span>Introduction</h2>
+    <p>
+      Keystrand ("the application", "the app") is developed and published by
+      FB COMPANY ("we", "us", "the developer"). We respect your privacy and have
+      built the application so that it needs as little information as possible in
+      order to work.
+    </p>
+    <p>
+      By installing or using the application you accept the practices described in
+      this policy. If you do not agree with this policy, please do not use the
+      application.
+    </p>
+  </section>
+
+  <section id="developer">
+    <h2><span class="num">2.</span>Developer and Application Information</h2>
+    <dl class="kv">
+      <dt>Developer</dt><dd>FB COMPANY</dd>
+      <dt>Application</dt><dd>Keystrand &ndash; Password Generator</dd>
+      <dt>Package name</dt><dd><code>com.fbcompany.keystrand</code></dd>
+      <dt>Platform</dt><dd>Android, distributed through Google Play</dd>
+      <dt>Support email</dt><dd><a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a></dd>
+    </dl>
+  </section>
+
+  <section id="collect">
+    <h2><span class="num">3.</span>Information We Collect</h2>
+    <p>
+      We, the developer, do not collect, receive, store or transmit any personal
+      information from the application. The application contains no account system,
+      no registration, no login, no analytics service and no crash reporting service
+      operated by us.
+    </p>
+    <p>
+      The application does store a small amount of information locally on your own
+      device so that it remembers how you like to use it:
+    </p>
+    <ul class="bullets">
+      <li>Your generator preferences, such as password length and which character types are enabled.</li>
+      <li>Your passphrase preferences, such as the number of words and the separator.</li>
+      <li>Your interface preferences, such as theme, accent colour and language.</li>
+      <li>A flag indicating whether you have purchased the ad-free or premium option, and the expiry time of a temporary premium period earned by watching a rewarded advertisement.</li>
+    </ul>
+    <p>
+      This information stays in the application's private storage area on your
+      device. It is not transmitted to us. Uninstalling the application removes it.
+      Note that if you have enabled Android backup on your device, Android may
+      include application preferences in your own device backup; that backup is
+      controlled by you and by Google, not by us.
+    </p>
+    <p>
+      Separately from us, third-party services included in the application may
+      process certain information. This is described in the
+      <a href="#advertising">Advertising</a>,
+      <a href="#iap">In-App Purchases</a> and
+      <a href="#third-party">Third-Party Services</a> sections below.
+    </p>
+  </section>
+
+  <section id="do-not-collect">
+    <h2><span class="num">4.</span>Information We Do Not Collect</h2>
+    <p>We do not collect any of the following:</p>
+    <ul class="bullets">
+      <li>Passwords or passphrases generated in the application.</li>
+      <li>Your name, email address, phone number or postal address.</li>
+      <li>Your contacts, calendar, photos, files or messages.</li>
+      <li>Your location.</li>
+      <li>Your device identifiers, for our own purposes.</li>
+      <li>Any account credentials, because the application has no accounts.</li>
+    </ul>
+    <p>
+      The application does not request permission to read your contacts, your
+      location, your camera, your microphone or your device storage, because it does
+      not need them.
+    </p>
+  </section>
+
+  <section id="local">
+    <h2><span class="num">5.</span>Local Data Processing</h2>
+    <p>
+      All password and passphrase generation happens on your device, inside the
+      application, using the operating system's cryptographically secure random
+      number generator. No part of the generation process contacts a server.
+    </p>
+    <p>
+      The word list used by the passphrase generator is included inside the
+      application, so no network request is made to produce a passphrase.
+    </p>
+    <p>
+      The application can generate passwords with no network connection at all. A
+      connection is only relevant for displaying advertisements and for completing a
+      purchase through Google Play.
+    </p>
+  </section>
+
+  <section id="passwords">
+    <h2><span class="num">6.</span>Password Generation and Security</h2>
+    <div class="callout">
+      <p>
+        Generated passwords are created locally on your device. They are not sent to
+        FB COMPANY servers. We do not operate a server that stores generated
+        passwords.
+      </p>
+    </div>
+    <p>
+      The application shows a temporary session history so that you can look back at
+      what you generated a moment ago. This history is kept in the device's working
+      memory only. It is not written to storage, it is not encrypted or backed up by
+      us, and it is discarded when the application is closed or removed from memory
+      by the operating system.
+    </p>
+    <div class="callout">
+      <p>
+        You are responsible for safely storing any password you generate. The
+        application does not back up, synchronise or recover passwords. If you
+        generate a password, close the application and have not saved that password
+        somewhere yourself, it cannot be retrieved by you or by us.
+      </p>
+    </div>
+    <p>
+      When you use the copy function, the password is placed on your device's
+      clipboard so that you can paste it elsewhere. The clipboard is managed by
+      Android, not by us. Other applications with clipboard access, and Android's own
+      clipboard history, may be able to read it. The application offers an optional
+      setting that attempts to clear the copied value from the clipboard after a
+      short delay. This is a convenience feature and cannot be guaranteed, because
+      the operating system controls the clipboard.
+    </p>
+    <p>
+      The strength figures and the estimated time-to-crack shown in the application
+      are calculated estimates based on the size of the character set and the length
+      of the password. They are provided for guidance and are not a guarantee of
+      security.
+    </p>
+  </section>
+
+  <section id="advertising">
+    <h2><span class="num">7.</span>Advertising</h2>
+    <p>
+      The free version of the application displays advertisements. These are served
+      by Google AdMob. Advertisements appear as a banner at the bottom of the
+      generator screen, as an occasional full-screen advertisement after repeated
+      use, and as an optional rewarded advertisement that you may choose to watch in
+      order to try premium tools temporarily.
+    </p>
+    <p>
+      Rewarded advertisements are never started without your explicit action.
+      Advertisements are not displayed on top of controls in a way designed to cause
+      accidental clicks.
+    </p>
+    <p>
+      If you purchase the ad-removal option or a premium option that includes it, the
+      application stops requesting and displaying advertisements.
+    </p>
+  </section>
+
+  <section id="admob">
+    <h2><span class="num">8.</span>Google AdMob</h2>
+    <p>
+      Advertising in the application is provided by Google AdMob, a service of
+      Google LLC. To select and deliver advertisements, and to measure and limit
+      their delivery, the Google Mobile Ads SDK integrated in the application may
+      process information such as your advertising identifier, IP address, device and
+      operating system characteristics, coarse location derived from your IP address,
+      and information about your interaction with advertisements.
+    </p>
+    <p>
+      This processing is carried out by Google in accordance with its own privacy
+      policy and terms, not by FB COMPANY. We do not receive this information and we
+      have no access to individual advertising data.
+    </p>
+    <p>
+      Where required by law, for example for users in the European Economic Area, the
+      United Kingdom and Switzerland, the application presents a consent message
+      using Google's User Messaging Platform before personalised advertisements are
+      requested. You can review or change your choice at any time from the
+      application's Settings screen, under "Ad privacy options", where that option is
+      applicable to your region.
+    </p>
+    <p>
+      You can also limit ad personalisation at the device level through your Android
+      settings, and you can reset or delete your advertising identifier there.
+    </p>
+    <p>
+      Google's privacy policy is available at
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>,
+      and information about how Google uses data from apps that use its services is
+      available at
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">policies.google.com/technologies/partner-sites</a>.
+    </p>
+  </section>
+
+  <section id="iap">
+    <h2><span class="num">9.</span>In-App Purchases</h2>
+    <p>
+      The application offers optional paid options. At the time of publication these
+      are an option that removes advertisements, a one-time premium option that
+      removes advertisements and unlocks additional generator tools, and an
+      auto-renewing premium subscription with the same unlocks while it is active.
+    </p>
+    <p>
+      The price, the type of purchase and, for subscriptions, the renewal period are
+      shown to you inside the application before you confirm a purchase.
+      Subscriptions renew automatically until cancelled. You can cancel a
+      subscription at any time in the Google Play Store, under Payments and
+      subscriptions.
+    </p>
+    <p>
+      The application stores only a simple local flag recording whether a paid option
+      is active on your device. It does not store your payment details, your order
+      number, your purchase token or your Google account information.
+    </p>
+  </section>
+
+  <section id="billing">
+    <h2><span class="num">10.</span>Google Play Billing</h2>
+    <p>
+      All purchases are processed by Google Play Billing. FB COMPANY never sees or
+      handles your payment card, bank details or billing address. Google processes
+      your purchase, your payment method and any refund in accordance with its own
+      terms and privacy policy.
+    </p>
+    <p>
+      When the application starts, and when you use the "Restore purchases" button,
+      the application asks Google Play whether the signed-in Google account owns any
+      of the paid options, so that your entitlement can be restored on a new or
+      reinstalled device. This exchange happens between your device and Google Play.
+      We do not operate a server in this process.
+    </p>
+    <p>
+      Requests for a refund are handled by Google Play according to the Google Play
+      refund policy. You can also contact us at
+      <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a> and we will
+      try to help where we are able to.
+    </p>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="num">11.</span>Third-Party Services</h2>
+    <p>
+      The application includes the following third-party components, all provided by
+      Google:
+    </p>
+    <ul class="bullets">
+      <li>Google AdMob and the Google Mobile Ads SDK, for advertising in the free version.</li>
+      <li>Google User Messaging Platform, for collecting advertising consent where it is legally required.</li>
+      <li>Google Play Billing, for processing in-app purchases.</li>
+      <li>Google Play services, which the components above rely on, and which Google Play uses to distribute and update the application.</li>
+    </ul>
+    <p>
+      These services are operated by Google and may process device, advertising,
+      purchase, diagnostic or usage-related information according to their own privacy
+      policies and terms. We do not control that processing and we do not receive the
+      underlying data.
+    </p>
+    <p>
+      The application does not include any advertising network other than Google
+      AdMob, and it does not include any analytics, attribution, social login or
+      crash-reporting service.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">12.</span>Children's Privacy</h2>
+    <p>
+      The application is a general-purpose security utility. It is not directed to
+      children and it is not designed for or targeted at children. It is not part of
+      the Google Play Families programme.
+    </p>
+    <p>
+      We do not knowingly collect personal information from children. Because we do
+      not collect personal information from anyone, we hold no children's data. If you
+      believe a child has provided personal information to us in some way, please
+      contact us at <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a>
+      so that we can address it.
+    </p>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">13.</span>Data Security</h2>
+    <p>
+      Because we do not operate a server and do not collect your data, there is no
+      developer-side database that could be breached and expose your information.
+    </p>
+    <p>
+      Preferences saved by the application are stored in the private application
+      storage area that Android provides, which is protected from other applications
+      by the operating system's sandbox on a device that has not been modified or
+      rooted.
+    </p>
+    <p>
+      No method of electronic storage is completely secure. The security of your
+      device, including its lock screen, its operating system updates and any other
+      software you install, is outside our control.
+    </p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">14.</span>Data Retention</h2>
+    <ul class="bullets">
+      <li><strong>Generated passwords and passphrases:</strong> kept in memory for the current session only, then discarded. Never written to storage.</li>
+      <li><strong>Preferences and the purchase flag:</strong> kept on your device until you clear the application's data or uninstall the application.</li>
+      <li><strong>Data held by us:</strong> none, because we do not collect any.</li>
+      <li><strong>Data held by Google for advertising and billing:</strong> retained according to Google's own retention policies.</li>
+    </ul>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">15.</span>User Rights</h2>
+    <p>
+      Data protection laws such as the GDPR and the CCPA give you rights over personal
+      information that a company holds about you. Because we hold no personal
+      information about you, there is nothing for us to export, correct or delete on
+      request.
+    </p>
+    <p>You can exercise practical control as follows:</p>
+    <ul class="bullets">
+      <li>Remove all locally stored preferences by clearing the application's data in Android settings, or by uninstalling the application.</li>
+      <li>Change or withdraw advertising consent, where applicable to your region, from the "Ad privacy options" entry in the application's Settings screen.</li>
+      <li>Reset or delete your advertising identifier, and limit ad personalisation, in your Android settings.</li>
+      <li>Remove advertising entirely by purchasing the ad-free or premium option.</li>
+      <li>Manage or cancel a subscription in the Google Play Store.</li>
+      <li>Ask a question about this policy by writing to <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a>.</li>
+    </ul>
+    <p>
+      For requests concerning data processed by Google as part of AdMob or Google Play
+      Billing, please contact Google directly, as we cannot access or delete data held
+      by Google on our behalf.
+    </p>
+  </section>
+
+  <section id="international">
+    <h2><span class="num">16.</span>International Users</h2>
+    <p>
+      The application can be downloaded in the countries where FB COMPANY has made it
+      available on Google Play, and it works the same way everywhere: generation is
+      local to your device.
+    </p>
+    <p>
+      Because we do not collect your information, we do not transfer your information
+      across borders. Google may process advertising and billing information on servers
+      located in countries other than your own, in accordance with its own privacy
+      policy and the safeguards described there.
+    </p>
+    <p>
+      It is your responsibility to ensure that your use of the application complies
+      with the laws that apply to you.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">17.</span>Changes to This Privacy Policy</h2>
+    <p>
+      We may update this policy, for example when a feature changes or a legal
+      requirement changes. When we do, we will update the date shown at the top of
+      this document and publish the revised policy at the policy address listed for
+      the application on Google Play. Where a change is significant, we will also make
+      the updated policy available in a new version of the application.
+    </p>
+    <p>
+      Continuing to use the application after an update takes effect means you accept
+      the revised policy. We recommend reviewing this policy from time to time.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>18. Contact Information</h2>
+    <p>
+      If you have a question, a concern or a request about this Privacy Policy or
+      about the application, please contact us:
+    </p>
+    <dl class="kv">
+      <dt>Developer</dt><dd>FB COMPANY</dd>
+      <dt>Application</dt><dd>Keystrand &ndash; Password Generator</dd>
+      <dt>Email</dt>
+      <dd><a class="mail" href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a></dd>
+    </dl>
+    <p style="margin-top:14px">
+      We aim to respond to genuine enquiries within a reasonable period.
+    </p>
+    <p style="margin-bottom:0">
+      See also our <a href="terms-of-use.html">Terms of Use</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p style="margin:0 0 6px">
+      <strong>FB COMPANY</strong> &nbsp;&middot;&nbsp;
+      <strong>Keystrand &ndash; Password Generator</strong>
+    </p>
+    <p style="margin:0">
+      <a href="mailto:fbstudiosapp@gmail.com">fbstudiosapp@gmail.com</a>
+      &nbsp;&middot;&nbsp; Privacy Policy last updated 9 August 2026
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
